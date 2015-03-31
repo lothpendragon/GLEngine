@@ -157,6 +157,7 @@ void Game::Render()
 	GLint camUniform = m_textureProgram.GetUniformLocation("P");
 	glUniformMatrix4fv(camUniform, 1, GL_FALSE, &m_camera.GetCameraMatrix()[0][0]);
 
+	// ENTER ANY RENDERING CODE FOR THE GAME HERE.
 	// DRAW SOME STUFF
 
 	m_spriteBatch.Begin();
